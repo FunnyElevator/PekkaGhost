@@ -60,6 +60,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FB4E7A519F7C47900EEBA1F /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
 		1FE1867819F7BDDE00D7B3C0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +88,7 @@
 		1FE1868319F7BDDE00D7B3C0 /* PekkaGhost */ = {
 			isa = PBXGroup;
 			children = (
+				1FB4E7A519F7C47900EEBA1F /* Videos */,
 				1FE1868819F7BDDE00D7B3C0 /* AppDelegate.h */,
 				1FE1868919F7BDDE00D7B3C0 /* AppDelegate.m */,
 				1FE1868B19F7BDDE00D7B3C0 /* ViewController.h */,
@@ -414,6 +422,7 @@
 				1FE186A619F7BDDF00D7B3C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FE186A719F7BDDF00D7B3C0 /* Build configuration list for PBXNativeTarget "PekkaGhostTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +431,7 @@
 				1FE186A919F7BDDF00D7B3C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
