@@ -115,7 +115,7 @@
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3q-gK-vNk">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                         <connections>
-                                            <segue destination="ose-Ns-Xeg" kind="embed" id="3rn-aa-D5d"/>
+                                            <segue destination="ose-Ns-Xeg" kind="embed" identifier="showMovie" id="3rn-aa-D5d"/>
                                         </connections>
                                     </containerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO5-gR-QOb">
@@ -152,6 +152,9 @@
                             <constraint firstItem="jMI-pF-eRq" firstAttribute="leading" secondItem="Ieq-N0-PUW" secondAttribute="leadingMargin" constant="-16" id="vkI-j1-xEW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="videoPlayer" destination="z3q-gK-vNk" id="tgI-J7-2nq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQu-Ex-0ew" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,7 +163,7 @@
         <!--AV Player View Controller-->
         <scene sceneID="r3I-Md-7e2">
             <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="ose-Ns-Xeg" sceneMemberID="viewController"/>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="ose-Ns-Xeg" customClass="AV1ViewController" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFl-aR-zXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1665" y="902"/>

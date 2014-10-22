@@ -11,9 +11,8 @@
 @import AVFoundation;
 @import AVKit;
 
-NSString * const kPlayerItemUrl = @"Videos/v1.mov";
-
 @interface FirstVideoViewController ()
+@property (weak, nonatomic) IBOutlet AVPlayerViewController *videoPlayer;
 
 @end
 
@@ -27,7 +26,7 @@ NSString * const kPlayerItemUrl = @"Videos/v1.mov";
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
     
     AVPlayer *player = [AVPlayer playerWithPlayerItem:playerItem];
-    */
+    
     
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, ^{
@@ -38,6 +37,7 @@ NSString * const kPlayerItemUrl = @"Videos/v1.mov";
         AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:fileURL];
         AVPlayer *player = [AVPlayer playerWithPlayerItem:playerItem];
         
+        //self.videoPlayer.player = player;
         AVPlayerViewController *playerViewController = [[AVPlayerViewController alloc] init];
         playerViewController.player = player;
         
@@ -49,6 +49,7 @@ NSString * const kPlayerItemUrl = @"Videos/v1.mov";
                              }];
         });
     });
+     */
     
     
 }
@@ -58,14 +59,21 @@ NSString * const kPlayerItemUrl = @"Videos/v1.mov";
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+  
+    if ([[segue identifier] isEqualToString:@"showMoview"]) {
+        AVPlayerViewController *playerViewController = segue.destinationViewController;
+        
+        //Player setup
+        NSString *filepath = [[NSBundle mainBundle] pathForResource:@"v1" ofType:@"mov"];
+        NSURL    *fileURL = [NSURL fileURLWithPath:filepath];
+        playerViewController.player = [AVPlayer playerWithURL:fileURL];
+    }
 }
-*/
+
 
 @end
