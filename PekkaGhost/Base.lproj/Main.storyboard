@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="952" y="137"/>
         </scene>
-        <!--View Controller-->
+        <!--First Video View Controller-->
         <scene sceneID="QiA-18-ld3">
             <objects>
-                <viewController id="XMw-6J-0i3" sceneMemberID="viewController">
+                <viewController id="XMw-6J-0i3" customClass="FirstVideoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qwP-Ea-chI"/>
                         <viewControllerLayoutGuide type="bottom" id="IAw-9v-KNf"/>

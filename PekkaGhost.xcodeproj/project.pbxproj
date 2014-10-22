@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F69787819F7D8EF00D0965C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F69787719F7D8EF00D0965C /* AVKit.framework */; };
+		1F69787B19F7DC8E00D0965C /* FirstVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69787A19F7DC8E00D0965C /* FirstVideoViewController.m */; };
 		1FE1868719F7BDDE00D7B3C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868619F7BDDE00D7B3C0 /* main.m */; };
 		1FE1868A19F7BDDE00D7B3C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868919F7BDDE00D7B3C0 /* AppDelegate.m */; };
 		1FE1868D19F7BDDE00D7B3C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868C19F7BDDE00D7B3C0 /* ViewController.m */; };
@@ -29,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		1F69787719F7D8EF00D0965C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1F69787919F7DC8E00D0965C /* FirstVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstVideoViewController.h; sourceTree = "<group>"; };
+		1F69787A19F7DC8E00D0965C /* FirstVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstVideoViewController.m; sourceTree = "<group>"; };
 		1FE1868119F7BDDE00D7B3C0 /* PekkaGhost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PekkaGhost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE1868519F7BDDE00D7B3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE1868619F7BDDE00D7B3C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				1FE1868B19F7BDDE00D7B3C0 /* ViewController.h */,
 				1FE1868C19F7BDDE00D7B3C0 /* ViewController.m */,
 				1FE1868E19F7BDDE00D7B3C0 /* Main.storyboard */,
+				1F69787919F7DC8E00D0965C /* FirstVideoViewController.h */,
+				1F69787A19F7DC8E00D0965C /* FirstVideoViewController.m */,
 				1FE1869119F7BDDE00D7B3C0 /* Images.xcassets */,
 				1FE1869319F7BDDE00D7B3C0 /* LaunchScreen.xib */,
 				1FE1868419F7BDDE00D7B3C0 /* Supporting Files */,
@@ -234,6 +239,7 @@
 				1FE1868D19F7BDDE00D7B3C0 /* ViewController.m in Sources */,
 				1FE1868A19F7BDDE00D7B3C0 /* AppDelegate.m in Sources */,
 				1FE1868719F7BDDE00D7B3C0 /* main.m in Sources */,
+				1F69787B19F7DC8E00D0965C /* FirstVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
