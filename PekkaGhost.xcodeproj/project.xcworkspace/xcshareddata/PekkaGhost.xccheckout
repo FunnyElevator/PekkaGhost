@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F5814F2A-23E1-4989-B2F7-2C6540B6CCEC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PekkaGhost</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4A88D55B28297863EFE723166C3A1B172A8F44EF</key>
+		<string>https://github.com/FunnyElevator/PekkaGhost.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PekkaGhost.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4A88D55B28297863EFE723166C3A1B172A8F44EF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/FunnyElevator/PekkaGhost.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4A88D55B28297863EFE723166C3A1B172A8F44EF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4A88D55B28297863EFE723166C3A1B172A8F44EF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PekkaGhost</string>
+		</dict>
+	</array>
+</dict>
+</plist>

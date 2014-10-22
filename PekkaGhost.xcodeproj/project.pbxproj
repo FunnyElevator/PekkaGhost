@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F69787819F7D8EF00D0965C /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F69787719F7D8EF00D0965C /* AVKit.framework */; };
 		1FE1868719F7BDDE00D7B3C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868619F7BDDE00D7B3C0 /* main.m */; };
 		1FE1868A19F7BDDE00D7B3C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868919F7BDDE00D7B3C0 /* AppDelegate.m */; };
 		1FE1868D19F7BDDE00D7B3C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868C19F7BDDE00D7B3C0 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F69787719F7D8EF00D0965C /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		1FE1868119F7BDDE00D7B3C0 /* PekkaGhost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PekkaGhost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE1868519F7BDDE00D7B3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE1868619F7BDDE00D7B3C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F69787819F7D8EF00D0965C /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +73,7 @@
 		1FE1867819F7BDDE00D7B3C0 = {
 			isa = PBXGroup;
 			children = (
+				1F69787719F7D8EF00D0965C /* AVKit.framework */,
 				1FE1868319F7BDDE00D7B3C0 /* PekkaGhost */,
 				1FE1869D19F7BDDF00D7B3C0 /* PekkaGhostTests */,
 				1FE1868219F7BDDE00D7B3C0 /* Products */,
