@@ -11,7 +11,7 @@
 @import AVFoundation;
 @import AVKit;
 
-NSString * const kPlayerItemUrl = @"http://devstreaming.apple.com/videos/wwdc/2014/503xx50xm4n63qe/503/503_sd_mastering_modern_media_playback.mov";
+NSString * const kPlayerItemUrl = @"Videos/v1.mov";
 
 @interface FirstVideoViewController ()
 
@@ -23,7 +23,7 @@ NSString * const kPlayerItemUrl = @"http://devstreaming.apple.com/videos/wwdc/20
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     /*
-    AVAsset *asset = [AVAsset assetWithURL:<#(NSURL *)#>];
+    AVAsset *asset = [AVAsset assetWithURL:url];
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
     
     AVPlayer *player = [AVPlayer playerWithPlayerItem:playerItem];
@@ -32,8 +32,10 @@ NSString * const kPlayerItemUrl = @"http://devstreaming.apple.com/videos/wwdc/20
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, ^{
         
-        NSURL *url = [NSURL URLWithString:kPlayerItemUrl];
-        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:url];
+        //NSURL *url = [NSURL URLWithString:kPlayerItemUrl];
+        NSString *filepath = [[NSBundle mainBundle] pathForResource:@"v1" ofType:@"mov"];
+        NSURL    *fileURL = [NSURL fileURLWithPath:filepath];
+        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:fileURL];
         AVPlayer *player = [AVPlayer playerWithPlayerItem:playerItem];
         
         AVPlayerViewController *playerViewController = [[AVPlayerViewController alloc] init];
