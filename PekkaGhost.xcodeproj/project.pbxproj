@@ -12,6 +12,7 @@
 		1F69787F19F7E4DC00D0965C /* v1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1F69787E19F7E4DC00D0965C /* v1.mov */; };
 		1F69788219F8688500D0965C /* AV1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69788119F8688500D0965C /* AV1ViewController.m */; };
 		1F69788619F8EF1700D0965C /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69788519F8EF1700D0965C /* VideoViewController.m */; };
+		1F69788819F900C300D0965C /* ghost.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F69788719F900C300D0965C /* ghost.jpg */; };
 		1FE1868719F7BDDE00D7B3C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868619F7BDDE00D7B3C0 /* main.m */; };
 		1FE1868A19F7BDDE00D7B3C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868919F7BDDE00D7B3C0 /* AppDelegate.m */; };
 		1FE1868D19F7BDDE00D7B3C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868C19F7BDDE00D7B3C0 /* ViewController.m */; };
@@ -40,6 +41,7 @@
 		1F69788119F8688500D0965C /* AV1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AV1ViewController.m; sourceTree = "<group>"; };
 		1F69788419F8EF1700D0965C /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		1F69788519F8EF1700D0965C /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		1F69788719F900C300D0965C /* ghost.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ghost.jpg; path = ../../../Dropbox/_placeholders/ghost.jpg; sourceTree = "<group>"; };
 		1FE1868119F7BDDE00D7B3C0 /* PekkaGhost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PekkaGhost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE1868519F7BDDE00D7B3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE1868619F7BDDE00D7B3C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,12 +85,13 @@
 			name = "AV-Video Controllers";
 			sourceTree = "<group>";
 		};
-		1FB4E7A519F7C47900EEBA1F /* Videos */ = {
+		1FB4E7A519F7C47900EEBA1F /* Videos & Photos */ = {
 			isa = PBXGroup;
 			children = (
 				1F69787E19F7E4DC00D0965C /* v1.mov */,
+				1F69788719F900C300D0965C /* ghost.jpg */,
 			);
-			name = Videos;
+			name = "Videos & Photos";
 			sourceTree = "<group>";
 		};
 		1FE1867819F7BDDE00D7B3C0 = {
@@ -113,7 +116,7 @@
 		1FE1868319F7BDDE00D7B3C0 /* PekkaGhost */ = {
 			isa = PBXGroup;
 			children = (
-				1FB4E7A519F7C47900EEBA1F /* Videos */,
+				1FB4E7A519F7C47900EEBA1F /* Videos & Photos */,
 				1FE1868819F7BDDE00D7B3C0 /* AppDelegate.h */,
 				1FE1868919F7BDDE00D7B3C0 /* AppDelegate.m */,
 				1FE1868B19F7BDDE00D7B3C0 /* ViewController.h */,
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE1869019F7BDDE00D7B3C0 /* Main.storyboard in Resources */,
+				1F69788819F900C300D0965C /* ghost.jpg in Resources */,
 				1F69787F19F7E4DC00D0965C /* v1.mov in Resources */,
 				1FE1869519F7BDDE00D7B3C0 /* LaunchScreen.xib in Resources */,
 				1FE1869219F7BDDE00D7B3C0 /* Images.xcassets in Resources */,
