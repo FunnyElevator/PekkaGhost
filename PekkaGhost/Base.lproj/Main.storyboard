@@ -168,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="1665" y="902"/>
         </scene>
-        <!--View Controller-->
+        <!--Video View Controller-->
         <scene sceneID="OTM-25-fMy">
             <objects>
-                <viewController id="pjF-x5-MyY" sceneMemberID="viewController">
+                <viewController id="pjF-x5-MyY" customClass="VideoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3GB-Vf-S6P"/>
                         <viewControllerLayoutGuide type="bottom" id="csc-1f-swP"/>
@@ -182,7 +182,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUJ-xj-iC9">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7F-ta-Y0z">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="284" id="RXk-Kp-J5h"/>
+                                            <constraint firstAttribute="width" constant="337" id="fzb-cR-RJP"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="RXk-Kp-J5h"/>
+                                                <exclude reference="fzb-cR-RJP"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="l7F-ta-Y0z" secondAttribute="bottom" id="4a5-pX-JgV"/>
+                                    <constraint firstItem="l7F-ta-Y0z" firstAttribute="top" secondItem="mUJ-xj-iC9" secondAttribute="top" id="D1U-Kn-NT5"/>
+                                    <constraint firstAttribute="trailing" secondItem="l7F-ta-Y0z" secondAttribute="trailing" id="VXN-4r-c4X"/>
+                                    <constraint firstItem="l7F-ta-Y0z" firstAttribute="leading" secondItem="mUJ-xj-iC9" secondAttribute="leading" id="rHL-hZ-MfN"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mP6-zK-Hiu">
                                 <rect key="frame" x="537" y="545" width="63" height="55"/>
@@ -209,6 +231,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="mUJ-xj-iC9" secondAttribute="trailing" constant="-16" id="vLW-iJ-pfJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imagePreview" destination="l7F-ta-Y0z" id="UFB-m4-A3d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awB-b1-YqU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

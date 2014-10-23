@@ -11,6 +11,7 @@
 		1F69787B19F7DC8E00D0965C /* FirstVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69787A19F7DC8E00D0965C /* FirstVideoViewController.m */; };
 		1F69787F19F7E4DC00D0965C /* v1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1F69787E19F7E4DC00D0965C /* v1.mov */; };
 		1F69788219F8688500D0965C /* AV1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69788119F8688500D0965C /* AV1ViewController.m */; };
+		1F69788619F8EF1700D0965C /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69788519F8EF1700D0965C /* VideoViewController.m */; };
 		1FE1868719F7BDDE00D7B3C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868619F7BDDE00D7B3C0 /* main.m */; };
 		1FE1868A19F7BDDE00D7B3C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868919F7BDDE00D7B3C0 /* AppDelegate.m */; };
 		1FE1868D19F7BDDE00D7B3C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868C19F7BDDE00D7B3C0 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		1F69787E19F7E4DC00D0965C /* v1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = v1.mov; path = PekkaGhost/Videos/v1.mov; sourceTree = SOURCE_ROOT; };
 		1F69788019F8688500D0965C /* AV1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AV1ViewController.h; sourceTree = "<group>"; };
 		1F69788119F8688500D0965C /* AV1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AV1ViewController.m; sourceTree = "<group>"; };
+		1F69788419F8EF1700D0965C /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		1F69788519F8EF1700D0965C /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		1FE1868119F7BDDE00D7B3C0 /* PekkaGhost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PekkaGhost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE1868519F7BDDE00D7B3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE1868619F7BDDE00D7B3C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				1FE1868B19F7BDDE00D7B3C0 /* ViewController.h */,
 				1FE1868C19F7BDDE00D7B3C0 /* ViewController.m */,
 				1FE1868E19F7BDDE00D7B3C0 /* Main.storyboard */,
+				1F69788419F8EF1700D0965C /* VideoViewController.h */,
+				1F69788519F8EF1700D0965C /* VideoViewController.m */,
 				1F69788319F8E33F00D0965C /* AV-Video Controllers */,
 				1F69787919F7DC8E00D0965C /* FirstVideoViewController.h */,
 				1F69787A19F7DC8E00D0965C /* FirstVideoViewController.m */,
@@ -256,6 +261,7 @@
 			files = (
 				1F69788219F8688500D0965C /* AV1ViewController.m in Sources */,
 				1FE1868D19F7BDDE00D7B3C0 /* ViewController.m in Sources */,
+				1F69788619F8EF1700D0965C /* VideoViewController.m in Sources */,
 				1FE1868A19F7BDDE00D7B3C0 /* AppDelegate.m in Sources */,
 				1FE1868719F7BDDE00D7B3C0 /* main.m in Sources */,
 				1F69787B19F7DC8E00D0965C /* FirstVideoViewController.m in Sources */,
