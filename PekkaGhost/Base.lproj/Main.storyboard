@@ -137,12 +137,19 @@
                                             <segue destination="ose-Ns-Xeg" kind="embed" identifier="showMovie" id="3rn-aa-D5d"/>
                                         </connections>
                                     </containerView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWz-3u-U3o">
+                                        <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="iC7-PN-feN"/>
+                                        </constraints>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO5-gR-QOb">
-                                        <rect key="frame" x="537" y="545" width="63" height="55"/>
+                                        <rect key="frame" x="537" y="550" width="63" height="50"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="63" id="VFZ-Jv-BQ8"/>
-                                            <constraint firstAttribute="height" constant="55" id="l9c-UL-y7w"/>
+                                            <constraint firstAttribute="height" constant="50" id="l9c-UL-y7w"/>
                                         </constraints>
                                         <state key="normal" title="Next">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -154,10 +161,13 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="VWz-3u-U3o" firstAttribute="leading" secondItem="jMI-pF-eRq" secondAttribute="leading" id="2p8-YR-I0N"/>
                                     <constraint firstAttribute="bottom" secondItem="z3q-gK-vNk" secondAttribute="bottom" id="9ZE-wZ-m96"/>
                                     <constraint firstAttribute="trailing" secondItem="z3q-gK-vNk" secondAttribute="trailing" id="Mhg-xg-CBe"/>
                                     <constraint firstItem="z3q-gK-vNk" firstAttribute="top" secondItem="jMI-pF-eRq" secondAttribute="top" id="Muj-BO-S0x"/>
+                                    <constraint firstAttribute="bottom" secondItem="VWz-3u-U3o" secondAttribute="bottom" id="YSV-Xp-71d"/>
                                     <constraint firstAttribute="bottom" secondItem="DO5-gR-QOb" secondAttribute="bottom" id="dqF-Zd-8Ci"/>
+                                    <constraint firstAttribute="trailing" secondItem="VWz-3u-U3o" secondAttribute="trailing" id="g9R-FC-RrN"/>
                                     <constraint firstAttribute="trailing" secondItem="DO5-gR-QOb" secondAttribute="trailing" id="m7r-qp-Gb7"/>
                                     <constraint firstItem="z3q-gK-vNk" firstAttribute="leading" secondItem="jMI-pF-eRq" secondAttribute="leading" id="wDt-vP-ohG"/>
                                 </constraints>

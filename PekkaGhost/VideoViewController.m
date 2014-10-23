@@ -46,6 +46,7 @@
     [session addInput:input];
     
     [session startRunning];
+    self.imagePreview.transform = CGAffineTransformMakeRotation(3.141/2);
 }
 
 - (void)didReceiveMemoryWarning {
