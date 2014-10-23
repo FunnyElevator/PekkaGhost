@@ -55,7 +55,10 @@
     });
      */
     
-    
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+    [blurEffectView setFrame:self.nextButton.bounds];
+    //[self.nextButton addSubview:blurEffectView];
 }
 
 - (void)goToNextView {
