@@ -20,9 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    
-    
+
+}
+
+- (void)viewDidAppear:(BOOL)animated {
     //----- SHOW LIVE CAMERA PREVIEW -----
     AVCaptureSession *session = [[AVCaptureSession alloc] init];
     session.sessionPreset = AVCaptureSessionPresetMedium;
@@ -46,7 +47,7 @@
     [session addInput:input];
     
     [session startRunning];
-    self.imagePreview.transform = CGAffineTransformMakeRotation(3.141/2);
+    //self.imagePreview.transform = CGAffineTransformMakeRotation(3.141/2);
 }
 
 - (void)didReceiveMemoryWarning {

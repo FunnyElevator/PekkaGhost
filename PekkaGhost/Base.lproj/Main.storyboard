@@ -143,6 +143,9 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="iC7-PN-feN"/>
                                         </constraints>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="750" width="808" height="50"/>
+                                        </variation>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO5-gR-QOb">
                                         <rect key="frame" x="537" y="550" width="63" height="50"/>
@@ -154,6 +157,9 @@
                                         <state key="normal" title="Next">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="745" y="750" width="63" height="50"/>
+                                        </variation>
                                         <connections>
                                             <segue destination="pjF-x5-MyY" kind="show" identifier="segueToViewTwo" id="7kg-EJ-cKm"/>
                                         </connections>
@@ -218,20 +224,30 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7F-ta-Y0z">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mP6-zK-Hiu">
+                                                <rect key="frame" x="537" y="545" width="63" height="55"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="63" id="hyq-ME-oxs"/>
+                                                    <constraint firstAttribute="height" constant="55" id="qp9-0U-b3h"/>
+                                                </constraints>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="SdO-gl-kh1" kind="show" id="fpM-qa-0WZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="284" id="RXk-Kp-J5h"/>
-                                            <constraint firstAttribute="width" constant="337" id="fzb-cR-RJP"/>
+                                            <constraint firstAttribute="bottom" secondItem="mP6-zK-Hiu" secondAttribute="bottom" id="10S-1C-YIQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="mP6-zK-Hiu" secondAttribute="trailing" id="BU8-tx-aXr"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="RXk-Kp-J5h"/>
-                                                <exclude reference="fzb-cR-RJP"/>
-                                            </mask>
-                                        </variation>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="l7F-ta-Y0z" secondAttribute="bottom" id="4a5-pX-JgV"/>
                                     <constraint firstItem="l7F-ta-Y0z" firstAttribute="top" secondItem="mUJ-xj-iC9" secondAttribute="top" id="D1U-Kn-NT5"/>
@@ -239,29 +255,17 @@
                                     <constraint firstItem="l7F-ta-Y0z" firstAttribute="leading" secondItem="mUJ-xj-iC9" secondAttribute="leading" id="rHL-hZ-MfN"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mP6-zK-Hiu">
-                                <rect key="frame" x="537" y="545" width="63" height="55"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="63" id="hyq-ME-oxs"/>
-                                    <constraint firstAttribute="height" constant="55" id="qp9-0U-b3h"/>
-                                </constraints>
-                                <state key="normal" title="Next">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="SdO-gl-kh1" kind="show" id="fpM-qa-0WZ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mUJ-xj-iC9" firstAttribute="top" secondItem="xn5-tT-fkt" secondAttribute="topMargin" id="0zE-0Q-7sR"/>
-                            <constraint firstItem="csc-1f-swP" firstAttribute="top" secondItem="mP6-zK-Hiu" secondAttribute="bottom" id="KoP-sg-91M"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mP6-zK-Hiu" secondAttribute="trailing" constant="-16" id="L59-Fd-g9r"/>
                             <constraint firstItem="csc-1f-swP" firstAttribute="top" secondItem="mUJ-xj-iC9" secondAttribute="bottom" id="k16-uF-VB5"/>
-                            <constraint firstItem="mUJ-xj-iC9" firstAttribute="leading" secondItem="xn5-tT-fkt" secondAttribute="leadingMargin" constant="-16" id="mwd-rd-D1D"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mUJ-xj-iC9" secondAttribute="trailing" constant="-16" id="vLW-iJ-pfJ"/>
+                            <constraint firstItem="mUJ-xj-iC9" firstAttribute="leading" secondItem="xn5-tT-fkt" secondAttribute="leadingMargin" constant="-16" id="mwd-rd-D1D">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-20"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="mUJ-xj-iC9" secondAttribute="trailing" constant="-16" id="vLW-iJ-pfJ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-20"/>
+                            </constraint>
                         </constraints>
                     </view>
                     <connections>
