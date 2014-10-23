@@ -27,6 +27,7 @@
     
     AVPlayer *vPlayer = [AVPlayer playerWithPlayerItem:playerItem];
     self.player = vPlayer;
+    
 }
 
 - (void)didReceiveMemoryWarning {

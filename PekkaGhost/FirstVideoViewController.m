@@ -12,7 +12,8 @@
 @import AVKit;
 
 @interface FirstVideoViewController ()
-@property (weak, nonatomic) IBOutlet AVPlayerViewController *videoPlayer;
+
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
 
 @end
 
@@ -21,6 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+   [self performSelector:@selector(goToNextView) withObject:nil afterDelay:10];
+    
     /*
     AVAsset *asset = [AVAsset assetWithURL:url];
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
@@ -52,6 +56,10 @@
      */
     
     
+}
+
+- (void)goToNextView {
+    [self performSegueWithIdentifier:@"segueToViewTwo" sender:self];
 }
 
 - (void)didReceiveMemoryWarning {

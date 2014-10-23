@@ -71,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F69788319F8E33F00D0965C /* AV-Video Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F69788019F8688500D0965C /* AV1ViewController.h */,
+				1F69788119F8688500D0965C /* AV1ViewController.m */,
+			);
+			name = "AV-Video Controllers";
+			sourceTree = "<group>";
+		};
 		1FB4E7A519F7C47900EEBA1F /* Videos */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +116,7 @@
 				1FE1868B19F7BDDE00D7B3C0 /* ViewController.h */,
 				1FE1868C19F7BDDE00D7B3C0 /* ViewController.m */,
 				1FE1868E19F7BDDE00D7B3C0 /* Main.storyboard */,
-				1F69788019F8688500D0965C /* AV1ViewController.h */,
-				1F69788119F8688500D0965C /* AV1ViewController.m */,
+				1F69788319F8E33F00D0965C /* AV-Video Controllers */,
 				1F69787919F7DC8E00D0965C /* FirstVideoViewController.h */,
 				1F69787A19F7DC8E00D0965C /* FirstVideoViewController.m */,
 				1FE1869119F7BDDE00D7B3C0 /* Images.xcassets */,

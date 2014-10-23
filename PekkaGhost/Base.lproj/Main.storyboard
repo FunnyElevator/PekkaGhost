@@ -120,7 +120,7 @@
                                     </containerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO5-gR-QOb">
                                         <rect key="frame" x="537" y="545" width="63" height="55"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="63" id="VFZ-Jv-BQ8"/>
                                             <constraint firstAttribute="height" constant="55" id="l9c-UL-y7w"/>
@@ -129,7 +129,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="pjF-x5-MyY" kind="show" id="7kg-EJ-cKm"/>
+                                            <segue destination="pjF-x5-MyY" kind="show" identifier="segueToViewTwo" id="7kg-EJ-cKm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -153,7 +153,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="videoPlayer" destination="z3q-gK-vNk" id="tgI-J7-2nq"/>
+                        <outlet property="nextButton" destination="DO5-gR-QOb" id="b3J-ss-fO1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQu-Ex-0ew" userLabel="First Responder" sceneMemberID="firstResponder"/>
