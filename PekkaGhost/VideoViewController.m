@@ -26,7 +26,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     //----- SHOW LIVE CAMERA PREVIEW -----
     AVCaptureSession *session = [[AVCaptureSession alloc] init];
-    session.sessionPreset = AVCaptureSessionPresetMedium;
+    session.sessionPreset = AVCaptureSessionPresetHigh;
     
     CALayer *viewLayer = self.imagePreview.layer;
     NSLog(@"viewLayer = %@", viewLayer);
@@ -36,7 +36,8 @@
     captureVideoPreviewLayer.frame = self.imagePreview.bounds;
     [self.imagePreview.layer addSublayer:captureVideoPreviewLayer];
     
-    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    //AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    AVCaptureDevice *device = [self frontFacingCameraIfAvailable];
     
     NSError *error = nil;
     AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
@@ -53,6 +54,28 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(AVCaptureDevice *)frontFacingCameraIfAvailable
+{
+    NSArray *videoDevices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+    AVCaptureDevice *captureDevice = nil;
+    for (AVCaptureDevice *device in videoDevices)
+    {
+        if (device.position == AVCaptureDevicePositionFront)
+        {
+            captureDevice = device;
+            break;
+        }
+    }
+    
+    //  couldn't find one on the front, so just get the default video device.
+    if ( ! captureDevice)
+    {
+        captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    }
+    
+    return captureDevice;
 }
 
 /*
