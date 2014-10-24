@@ -294,32 +294,6 @@
             </objects>
             <point key="canvasLocation" x="3118" y="137"/>
         </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="hLV-tD-ghD">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="j5b-1N-Ugt" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dOJ-vu-78G" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3118" y="847"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="YCc-Ay-bnF">
-            <objects>
-                <viewController id="E9o-Bi-5Z3" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DR1-0O-Obs"/>
-                        <viewControllerLayoutGuide type="bottom" id="BsM-19-Mos"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aNq-xz-u7w">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RxN-rK-fHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3806" y="137"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="uxB-eN-Zt4">
             <objects>
