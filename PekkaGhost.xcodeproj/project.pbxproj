@@ -14,6 +14,8 @@
 		1F69788619F8EF1700D0965C /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F69788519F8EF1700D0965C /* VideoViewController.m */; };
 		1F69788A19FA3C0100D0965C /* ghost.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F69788919FA3C0100D0965C /* ghost.jpg */; };
 		1F69788C19FA43CC00D0965C /* ilpo-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F69788B19FA43CC00D0965C /* ilpo-mask.png */; };
+		1F69788E19FA6DA600D0965C /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F69788D19FA6DA600D0965C /* welcome.png */; };
+		1F69789019FA6EEB00D0965C /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F69788F19FA6EEB00D0965C /* mask.png */; };
 		1FE1868719F7BDDE00D7B3C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868619F7BDDE00D7B3C0 /* main.m */; };
 		1FE1868A19F7BDDE00D7B3C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868919F7BDDE00D7B3C0 /* AppDelegate.m */; };
 		1FE1868D19F7BDDE00D7B3C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1868C19F7BDDE00D7B3C0 /* ViewController.m */; };
@@ -44,7 +46,9 @@
 		1F69788519F8EF1700D0965C /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		1F69788919FA3C0100D0965C /* ghost.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ghost.jpg; path = Videos/ghost.jpg; sourceTree = "<group>"; };
 		1F69788B19FA43CC00D0965C /* ilpo-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ilpo-mask.png"; path = "Videos/ilpo-mask.png"; sourceTree = "<group>"; };
-		1FE1868119F7BDDE00D7B3C0 /* PekkaGhost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PekkaGhost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F69788D19FA6DA600D0965C /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = ../../../Desktop/welcome.png; sourceTree = "<group>"; };
+		1F69788F19FA6EEB00D0965C /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mask.png; path = ../../../Desktop/mask.png; sourceTree = "<group>"; };
+		1FE1868119F7BDDE00D7B3C0 /* Explore Mlab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Explore Mlab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE1868519F7BDDE00D7B3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE1868619F7BDDE00D7B3C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1FE1868819F7BDDE00D7B3C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		1FB4E7A519F7C47900EEBA1F /* Videos & Photos */ = {
 			isa = PBXGroup;
 			children = (
+				1F69788F19FA6EEB00D0965C /* mask.png */,
+				1F69788D19FA6DA600D0965C /* welcome.png */,
 				1F69788B19FA43CC00D0965C /* ilpo-mask.png */,
 				1F69787E19F7E4DC00D0965C /* v1.mov */,
 				1F69788919FA3C0100D0965C /* ghost.jpg */,
@@ -110,7 +116,7 @@
 		1FE1868219F7BDDE00D7B3C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FE1868119F7BDDE00D7B3C0 /* PekkaGhost.app */,
+				1FE1868119F7BDDE00D7B3C0 /* Explore Mlab.app */,
 				1FE1869A19F7BDDF00D7B3C0 /* PekkaGhostTests.xctest */,
 			);
 			name = Products;
@@ -180,7 +186,7 @@
 			);
 			name = PekkaGhost;
 			productName = PekkaGhost;
-			productReference = 1FE1868119F7BDDE00D7B3C0 /* PekkaGhost.app */;
+			productReference = 1FE1868119F7BDDE00D7B3C0 /* Explore Mlab.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1FE1869919F7BDDF00D7B3C0 /* PekkaGhostTests */ = {
@@ -245,11 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE1869019F7BDDE00D7B3C0 /* Main.storyboard in Resources */,
+				1F69788E19FA6DA600D0965C /* welcome.png in Resources */,
 				1F69788C19FA43CC00D0965C /* ilpo-mask.png in Resources */,
 				1F69788A19FA3C0100D0965C /* ghost.jpg in Resources */,
 				1F69787F19F7E4DC00D0965C /* v1.mov in Resources */,
 				1FE1869519F7BDDE00D7B3C0 /* LaunchScreen.xib in Resources */,
 				1FE1869219F7BDDE00D7B3C0 /* Images.xcassets in Resources */,
+				1F69789019FA6EEB00D0965C /* mask.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PekkaGhost/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Explore Mlab";
 			};
 			name = Debug;
 		};
@@ -408,7 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PekkaGhost/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Explore Mlab";
 			};
 			name = Release;
 		};

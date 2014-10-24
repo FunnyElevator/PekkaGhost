@@ -20,6 +20,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ghost.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cAa-Ax-fph">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mask.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tjk-qb-YQz">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txI-s7-IOz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -90,11 +93,15 @@
                             <constraint firstItem="VbK-UR-8Pe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NVv-3b-hbf"/>
                             <constraint firstItem="VbK-UR-8Pe" firstAttribute="top" secondItem="AhJ-jM-nSZ" secondAttribute="bottom" constant="11" id="O0q-x7-XzL"/>
                             <constraint firstItem="cAa-Ax-fph" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="UfR-U6-VEA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tjk-qb-YQz" secondAttribute="trailing" constant="-20" id="WJ2-nX-iFf"/>
                             <constraint firstAttribute="centerX" secondItem="AhJ-jM-nSZ" secondAttribute="centerX" id="Y4Q-13-SWH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tjk-qb-YQz" secondAttribute="bottom" id="YS9-7i-mG5"/>
                             <constraint firstItem="txI-s7-IOz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="aMm-LE-8G1">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-20"/>
                             </constraint>
+                            <constraint firstItem="Tjk-qb-YQz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="iAC-1p-z7J"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VbK-UR-8Pe" secondAttribute="trailing" id="ikD-4C-TZs"/>
+                            <constraint firstItem="Tjk-qb-YQz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="mVd-mV-FUR"/>
                             <constraint firstItem="cAa-Ax-fph" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="mgh-sf-Omn">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-20"/>
                             </constraint>
@@ -259,8 +266,8 @@
                                             <constraint firstAttribute="trailing" secondItem="mP6-zK-Hiu" secondAttribute="trailing" id="BU8-tx-aXr"/>
                                         </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ilpo-mask.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Bd-be-79K">
-                                        <rect key="frame" x="0.0" y="-35" width="600" height="635"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ilpo-mask.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Bd-be-79K">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -317,6 +324,7 @@
     </scenes>
     <resources>
         <image name="ghost.jpg" width="3264" height="2448"/>
-        <image name="ilpo-mask.png" width="800" height="600"/>
+        <image name="ilpo-mask.png" width="1024" height="768"/>
+        <image name="mask.png" width="1024" height="1024"/>
     </resources>
 </document>
