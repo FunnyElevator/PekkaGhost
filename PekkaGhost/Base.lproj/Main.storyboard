@@ -197,6 +197,11 @@
                                     <constraint firstAttribute="trailing" secondItem="DO5-gR-QOb" secondAttribute="trailing" id="m7r-qp-Gb7"/>
                                     <constraint firstItem="z3q-gK-vNk" firstAttribute="leading" secondItem="jMI-pF-eRq" secondAttribute="leading" id="wDt-vP-ohG"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="DO5-gR-QOb"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

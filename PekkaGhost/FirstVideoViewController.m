@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-   [self performSelector:@selector(goToNextView) withObject:nil afterDelay:10];
+   [self performSelector:@selector(goToNextView) withObject:nil afterDelay:260];
     
     /*
     AVAsset *asset = [AVAsset assetWithURL:url];
